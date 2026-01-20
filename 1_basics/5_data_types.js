@@ -115,3 +115,46 @@ const symbol1 = Symbol('1');
 const symbol2 = Symbol('1');
 
 console.log(symbol1 === symbol2);
+
+/**
+ *  Object 타입
+ * 
+ * Map
+ * key-value 쌍으로 이루어진 데이터 구조
+ */
+const dictionary = {
+  red: '빨간색',
+  blue: '파란색',
+  green: '초록색',
+};
+console.log(dictionary);
+console.log(dictionary['red']);
+console.log(dictionary.blue);
+
+console.log(typeof dictionary);
+
+/**
+ * Array 타입
+ * 
+ * 값을 리스트로 나열할 수 있는 타입
+ */
+const fruits = ['사과', '바나나', '자몽', '포도'];
+console.log(fruits);
+
+/**
+ * index
+ * 
+ * 0부터 시작
+ * 1씩 올라감
+ */
+console.log(fruits[1]);
+console.log(fruits[2]);
+
+fruits[1] = '망고';
+console.log(fruits);
+console.log(typeof fruits);
+
+/**
+ * static typing -> 변수를 선언할 때 타입을 지정하는 것
+ * dynamic typing -> 변수의 타입을 선언하지 않고 값으로 타입을 추론하는 것
+ */
