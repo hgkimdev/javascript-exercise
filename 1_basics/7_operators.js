@@ -185,3 +185,25 @@ console.log(true && '아이브');
 
 console.log(true && true && '아이브');
 console.log(true && false && '아이브');
+
+/**
+ * 지수 연산자 (Exponentiation Operator)
+ */
+console.log(2 ** 2);
+console.log(10 ** 3);
+
+/**
+ * null 연산자 (Nullish Coalescing Operator)
+ */
+let name;
+console.log(name);
+
+name = name ?? 'Jane Doe';
+console.log(name);
+
+name = name ?? 'John Doe';
+console.log(name);
+
+let name2;
+name2 ??= 'Jane Doe';
+console.log(name2);
