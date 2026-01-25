@@ -63,3 +63,52 @@ for (let key in iveMembersArray){
   console.log(key);
   console.log(`${key}:${iveMembersArray[key]}`);
 }
+console.log('------------');
+
+/**
+ * for...of
+*/
+for(let value of iveMembersArray){
+  console.log(value);
+}
+console.log('------------');
+
+/**
+ * While
+*/
+let number = 0;
+while (number < 10){
+  number++;
+}
+console.log(number);
+console.log('------------');
+
+/**
+ * do...while
+*/
+number = 0;
+do {
+  number++;
+}while(number < 10 );
+console.log(number);
+console.log('------------');
+
+/**
+ * break
+*/
+for (let i = 0; i < 10; i++){
+  if (i === 5){
+    break;
+  }
+  console.log(i);
+}
+console.log('------------');
+
+number = 0;
+while (number < 10){
+  if (number === 5){
+    break;
+  }
+  number++;
+  console.log(number);
+}
