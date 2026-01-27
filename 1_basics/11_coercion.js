@@ -44,3 +44,13 @@ console.log(!!'false');
 console.log(!!false);
 console.log(!!undefined);
 console.log(!!null);
+//Object, Array는 무조건 true
+console.log(!!{});
+console.log(!![]);
+
+/**
+ * 1) 아무 글자도 없는 String
+ * 2) 값이 없는 경우
+ * 3) 0
+ *  모두 false를 반환
+ */
