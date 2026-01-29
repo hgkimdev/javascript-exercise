@@ -38,7 +38,5 @@ console.log(wonYoung.sayName());
 console.log(typeof IdolModel);
 //js에서 class는 function으로 인식됨
 console.log(typeof yuJin);
-//class로 생성한 object는 instance
-
-
+//class로 생성한 object는 해당 class의 instance
 // constructor - 생성자
