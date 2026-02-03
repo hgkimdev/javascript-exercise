@@ -13,6 +13,24 @@ function IdolModel(name,year){
 }
 console.log(IdolModel.prototype);
 
-console.dir(IdolModel.prototype, {
-  showHidden: true,
-});
+// console.dir(IdolModel.prototype, {
+//   showHidden: true,
+// });
+
+// circular reference
+console.log(IdolModel.prototype.constructor === IdolModel);
+console.log(IdolModel.prototype.constructor.prototype === IdolModel.prototype);
+
+const yuJin = new IdolModel('안유진', 2003);
+
+console.log(yuJin.__proto__);
+console.log(yuJin.__proto__ === IdolModel.prototype);
+
+console.log(testObj.__proto__ === Object.prototype);
+
+console.log(IdolModel.__proto__ === Function.prototype);
+console.log(Function.prototype.__proto__ === Object.prototype);
+console.log(IdolModel.prototype.__proto__ === Object.prototype);
+
+console.log(yuJin.toString());
+console.log(Object.prototype.toString());
