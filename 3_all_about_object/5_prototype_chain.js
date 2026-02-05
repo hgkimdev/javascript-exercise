@@ -76,3 +76,22 @@ IdolModel3.sayStaticHello = function(){
   return '안녕하세요 저는 static method 입니다.';
 }
 console.log(IdolModel3.sayStaticHello());
+
+/**
+ * Overriding
+ */
+function IdolModel4(name, year){
+  this.name = name;
+  this.year = year;
+
+  this.sayHello =function(){
+    return '안녕하세요 저는 인스턴스 메서드입니다!';
+  }
+}
+IdolModel4.prototype.sayHello = function(){
+  return '안녕하세요 저는 prototype 메서드입니다!';
+}
+const yuJin4 = new IdolModel4('안유진', 2003);
+
+// 프로퍼티 셰도잉 - class에서 override
+console.log(yuJin4.sayHello());
