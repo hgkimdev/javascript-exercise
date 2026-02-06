@@ -95,3 +95,27 @@ const yuJin4 = new IdolModel4('안유진', 2003);
 
 // 프로퍼티 셰도잉 - class에서 override
 console.log(yuJin4.sayHello());
+
+/**
+ * getPrototypeOf, setPrototypeOf
+ * 
+ * 인스턴스의 __proto__ 변경 vs 함수의 prototype 변경
+ */
+function IdolModel(name, year){
+  this.name = name;
+  this.year = year;
+}
+
+IdolModel.prototype.sayHello = function(){
+  return `${this.name} 인사를 합니다.`;
+}
+function FemaleIdolModel(name,year){
+  this.name = name;
+  this.year = year;
+
+  this.dance = function(){
+    return `${this.name}이 춤을 춥니다.`;
+  }
+}
+const gaEul = new IdolModel('가을', 2004);
+const ray = new FemaleIdolModel('레이', 2004);
