@@ -114,8 +114,24 @@ function FemaleIdolModel(name,year){
   this.year = year;
 
   this.dance = function(){
-    return `${this.name}이 춤을 춥니다.`;
+    return `${this.name}가 춤을 춥니다.`;
   }
 }
 const gaEul = new IdolModel('가을', 2004);
 const ray = new FemaleIdolModel('레이', 2004);
+
+console.log(gaEul.__proto__);
+console.log(gaEul.__proto__ === IdolModel.prototype);
+console.log(Object.getPrototypeOf(gaEul) === IdolModel.prototype);
+
+console.log(gaEul.sayHello());
+console.log(ray.dance());
+console.log(Object.getPrototypeOf(ray) === FemaleIdolModel.prototype);
+//console.log(ray.sayHello());
+
+Object.setPrototypeOf(ray, IdolModel.prototype);
+console.log(ray.sayHello());
+
+console.log(ray.constructor === FemaleIdolModel);
+console.log(ray.constructor === IdolModel);
+console.log(gaEul.constructor === IdolModel);
