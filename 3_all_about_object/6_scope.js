@@ -7,7 +7,7 @@ function levelOne() {
   console.log(numberOne);
 }
 
-levelOne();
+//levelOne();
 
 function levelOne() {
     var numberOne = 40;
