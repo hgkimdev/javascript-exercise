@@ -25,8 +25,8 @@ function levelOne() {
   function levelTwo() {
     var numberTwo = 99;
 
-    console.log(`levelTwo numberTwo : ${NumberTwo}`);
-    console.log(`levelTwo numberOne : ${NumberOne}`);
+    console.log(`levelTwo numberTwo : ${numberTwo}`);
+    console.log(`levelTwo numberOne : ${numberOne}`);
   }
 
   levelTwo();
