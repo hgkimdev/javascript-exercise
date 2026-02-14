@@ -34,5 +34,6 @@ function levelOne() {
 }
 
 levelOne();
+
 console.log(numberOne);
 console.log(numberTwo);
